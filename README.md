@@ -30,7 +30,7 @@ XRP Community Fund.
 At this stage the code detailed here is just a proof-of-concept designed to
 elicit feedback. However, it is the assertion of this author that the majority
 of required functionality is implemented by this early version with minimal
-remaining required effort to complete. To be considered complete the following
+effort remaining to complete. To be considered complete the following
 should be added:
 
 1. Collection of OS stats not contained in rippled stats.
@@ -45,8 +45,15 @@ should be added:
 # Running the Prototype
 
 In order to run the code you must be running a local rippled server or alternatively
-you may use the Dockerfile contained in the root of the repository to start one for
-test purpose. The script currently assumes the latter. If you choose the former then
+use the Dockerfile contained in the root of the repository along with the following
+commands to start one for test purpose.
+
+```bash
+docker build -t rippled .
+docker run --name rippled rippled
+```
+
+The script currently assumes the latter. If you choose the former then
 you will need to toggle the following code in the top portion of the script:
 
 ```python
@@ -69,7 +76,7 @@ nc -l 1234
 The script assumes the proxy service is running on the local machine on port 1234 but
 can be overridden using the "--proxy=<url>" option passed to the collect.py script.
 
-Run the script then follows:
+Running the script then follows:
 
 ```bash
 ./collect.py --proxy=http://localhost:1234
