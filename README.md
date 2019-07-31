@@ -22,6 +22,8 @@ XRP Community Fund.
     shall exist as a simple REST service that expects a POST request with a JSON
     body containing the collected stats and a header field containing the
     associated signature.
+2. Signatures shall be generated using sign command of 
+    [validator-keys tool](https://github.com/ripple/validator-keys-tool).
 
 # Remaining Work
 
