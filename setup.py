@@ -11,7 +11,7 @@ setup(
    long_description=long_description,
    author='Michael Fazio',
    author_email='michaelfazio@me.com',
-   url="https://github.com/michaeljfazio/ripple-stats-collector",
-   packages=['ripple-stats-collector'],
-   install_requires=[]
+   url='https://github.com/michaeljfazio/ripple-stats-collector',
+   scripts=['bin/collect.py'],
+   install_requires=['argparse', 'requests']
 )

@@ -18,7 +18,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r requirements.txt
+            pip3 install -r requirements.txt
 
       - save_cache:
           paths:
@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Package
           command: |
-            python setup.py bdist
+            python3 setup.py bdist
 
       - store_artifacts:
           path: dist
