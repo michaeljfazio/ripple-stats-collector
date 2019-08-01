@@ -42,6 +42,14 @@ should be added:
 1. Python 3
 2. Pip3
 
+# Installing from Source
+
+Checkout the code and run the following command.
+
+```bash
+python3 setup.py install
+```
+
 # Running the Prototype
 
 In order to run the code you must be running a local rippled server or alternatively
@@ -79,7 +87,7 @@ can be overridden using the "--proxy=<url>" option passed to the collect.py scri
 Running the script then follows:
 
 ```bash
-./collect.py --proxy=http://localhost:1234
+collect.py --proxy=http://localhost:1234
 ```
 
 If you have correctly followed the above instructions, you should see something that
