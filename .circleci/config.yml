@@ -14,7 +14,7 @@ jobs:
             - v1-dependencies-
 
       - run:
-          name: install dependencies
+          name: Install Dependencies
           command: |
             python3 -m venv venv
             . venv/bin/activate
@@ -26,9 +26,9 @@ jobs:
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       - run:
-          name: package
+          name: Package
           command: |
-            python setup.py bdist --format=rpm
+            python setup.py bdist
 
       - store_artifacts:
           path: dist
