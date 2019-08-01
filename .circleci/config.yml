@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:latest
+    steps:
+      - checkout
+      - run: python setup.py bdist --format=rpm
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
