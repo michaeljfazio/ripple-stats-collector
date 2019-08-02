@@ -61,17 +61,17 @@ docker build -t rippled .
 docker run --name rippled rippled
 ```
 
-The script currently assumes the latter. If you choose the former then
+The script currently assumes the former. If you choose the latter then
 you will need to toggle the following code in the top portion of the script:
 
 ```python
-CMD_SIGN = "docker exec rippled /opt/ripple/bin/validator-keys sign %s"
-CMD_SERVER_INFO = "docker exec rippled rippled server_info"
-CMD_SERVER_STATE = "docker exec rippled rippled server_state"
+# CMD_SIGN = "docker exec rippled /opt/ripple/bin/validator-keys sign %s"
+# CMD_SERVER_INFO = "docker exec rippled rippled server_info"
+# CMD_SERVER_STATE = "docker exec rippled rippled server_state"
 
-# CMD_SIGN = "/opt/ripple/bin/validator-keys sign %s"
-# CMD_SERVER_INFO = "rippled server_info"
-# CMD_SERVER_STATE = "rippled server_state"
+CMD_SIGN = "/opt/ripple/bin/validator-keys sign %s"
+CMD_SERVER_INFO = "rippled server_info"
+CMD_SERVER_STATE = "rippled server_state"
 ```
 
 Netcat can be used as a quick and dirty way to emulate the "Stats Proxy & Validation" 

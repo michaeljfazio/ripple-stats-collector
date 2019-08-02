@@ -6,13 +6,13 @@ import base64
 import requests
 import argparse
 
-CMD_SIGN = "docker exec rippled /opt/ripple/bin/validator-keys sign %s"
-CMD_SERVER_INFO = "docker exec rippled rippled server_info"
-CMD_SERVER_STATE = "docker exec rippled rippled server_state"
+# CMD_SIGN = "docker exec rippled /opt/ripple/bin/validator-keys sign %s"
+# CMD_SERVER_INFO = "docker exec rippled rippled server_info"
+# CMD_SERVER_STATE = "docker exec rippled rippled server_state"
 
-# CMD_SIGN = "/opt/ripple/bin/validator-keys sign %s"
-# CMD_SERVER_INFO = "rippled server_info"
-# CMD_SERVER_STATE = "rippled server_state"
+CMD_SIGN = "/opt/ripple/bin/validator-keys sign %s"
+CMD_SERVER_INFO = "rippled server_info"
+CMD_SERVER_STATE = "rippled server_state"
 
 DEFAULT_PROXY = 'http://localhost:1234'
 
