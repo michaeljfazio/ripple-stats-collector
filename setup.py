@@ -13,5 +13,5 @@ setup(
    author_email='michaelfazio@me.com',
    url='https://github.com/michaeljfazio/ripple-stats-collector',
    scripts=['bin/collect.py'],
-   install_requires=['argparse', 'requests']
+   install_requires=['argparse', 'requests', 'psutil']
 )
