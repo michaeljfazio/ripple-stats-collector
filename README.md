@@ -107,6 +107,6 @@ Content-Length: 5122
 ```
 
 Note that the body signature is specified by the 'Digest' header and follows the format 
-ECDSA=SIGNATURE. THe actual payload is first converted to base64 before being passed to
+ECDSA=SIGNATURE. The actual payload is first converted to base64 before being passed to
 the validator-keys tool for signing. The receiving proxy must take this into account when
 verifiying the signature.
