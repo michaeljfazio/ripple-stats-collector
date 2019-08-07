@@ -38,15 +38,15 @@ should be added:
 
 # Requirements
 
-1. Python 3
-2. Pip3
+1. Python
+2. Pip
 
 # Installing from Source
 
 Checkout the code and run the following command.
 
 ```bash
-python3 setup.py install
+python setup.py install
 ```
 
 # Running the Prototype
