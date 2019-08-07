@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import os
 import json
@@ -44,7 +44,7 @@ system_info = {
 server_info = json.loads(os.popen(CMD_SERVER_INFO).read())['result']['info']
 server_state = json.loads(os.popen(CMD_SERVER_STATE).read())['result']['state']
 payload = json.dumps({ 'system': system_info, 'server_info': server_info, 'server_state': server_state }).strip()
-encoded = base64.encodebytes(payload.encode())
+encoded = base64.b64encode(payload.encode())
 signature = os.popen(CMD_SIGN % encoded).read().strip()
 
 headers = { 
