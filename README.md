@@ -5,6 +5,10 @@ and forwards them onto a REST endpoint. This code is intended to fulfill
 the "Stats Collection" brief as detailed by the XRP Community Fund which
 can be found [here](https://communityfund.xrptipbot.com/).
 
+# Build Status
+
+[![CircleCI](https://circleci.com/gh/michaeljfazio/ripple-stats-collector.svg?style=svg)](https://circleci.com/gh/michaeljfazio/ripple-stats-collector)
+
 # Functional Description
 
 In keeping with the XRP Community Fund brief the collection agent proposed 
