@@ -39,6 +39,7 @@ should be added:
 
 1. ~~Collection of OS stats not contained in rippled stats.~~ **Done!**
 2. Appropriate installation and usage documentation.
+3. Unit test coverage.
 
 # Requirements
 
