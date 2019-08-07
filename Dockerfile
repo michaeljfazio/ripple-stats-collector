@@ -8,4 +8,6 @@ RUN echo "deb https://repos.ripple.com/repos/rippled-deb bionic stable" | tee -a
 RUN apt -y update
 RUN apt -y install rippled
 
+RUN /opt/ripple/bin/validator-keys create_keys
+
 ENTRYPOINT [ "rippled" ]
